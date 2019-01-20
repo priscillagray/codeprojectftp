@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="ftp.css">
+        <title> FTP Client</title>
+    </head>
+    <body>
+       <div class="title"><h1> Simple FTP</h1></div> 
+        <hr>
+       <div class="instruction"><p>  You can drag and drop files, but first you must connect.</p>
+        <p>Left window is your local folder, right window is the remote folder.</p></div> <hr>
+        <table border="0" cellpadding="0" cellspacing= "1" align="center" width="95%">
+            <form name=login>
+                <tr>
+                    <td class="brgtcell" align="right"> Username</td>
+                    <td class= "darkcell"><input type='text' name='username' value='username' size= "20" maxlength= "20"></td> </tr> 
+                <tr>
+                    <td class="brgtcell" align="right"> Password</td>
+                    <td class="darkcell"> <input type="text" name="password" value="password" size ="20" maxlength="20"> </td> </tr>
+                <tr>
+                    <td class="brgtcell" align="right"> Server</td>
+                    <td class="darkcell"><input type ="text" name="server" value="ftp.microsoft.com" size="60" maxlength="120"></td></tr>
+                <tr>
+                    <td class="brgtcell" align="right"> Local</td>
+                    <td class="darkcell"> <input type="text" name="local" value= "c:\" size="60" maxlength="200"></td> </tr>
+         </table>
+
+            <hr>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="left"><input style="color: #000000" type="button" value= "Connect" onClick="Login(this.form)"></td>
+                </tr>
+                </form> </table>
+    
+        <script language="javascript" src="script.js"></script>
+    </body>
+</html>
